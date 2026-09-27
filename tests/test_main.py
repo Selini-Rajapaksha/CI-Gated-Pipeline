@@ -15,8 +15,6 @@ def test_home():
 
     assert response.status_code == 200
     assert response.json() == {"message": "CI Pipeline Demo"}
-
-
 def test_health():
     response = client.get("/health")
 
